@@ -2,9 +2,14 @@ package main
 
 import "fmt"
 
+const englishisHelloPrefix = "Hello, "
+
 // hello, world
 func Hello(name string) string {
-	return "Hello, " + name
+	if name == "" {
+		name = "World"
+	}
+	return englishisHelloPrefix + name
 }
 
 func main() {
