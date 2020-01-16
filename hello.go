@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// hello
+// hello, world
 func Hello(name string) string {
 	return "Hello, " + name
 }
